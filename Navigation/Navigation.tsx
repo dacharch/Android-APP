@@ -5,7 +5,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import Algebra from '../components/Algebra/Algebra';
 import Finance from '../components/Finance/Finance';
 import Health from '../components/Health/Health';
-import Misc from "../components/Misc/Misc"
 
 const Drawer = createDrawerNavigator();
 
@@ -18,7 +17,6 @@ const Navigation = () => {
                 <Drawer.Screen name="Algebra" component={Algebra} />
                 <Drawer.Screen name="Finance" component={Finance} />
                 <Drawer.Screen name="Health" component={Health}  />
-                <Drawer.Screen name="Misc" component={Misc} />
             </Drawer.Navigator>
         </NavigationContainer>
 
