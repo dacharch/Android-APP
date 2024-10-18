@@ -167,6 +167,7 @@ const Calculator = () => {
             </Pressable>
         </View>
         {/*  */}
+        
         <View style={styles.main_screen__keypad_row}>
             <Pressable onPress={() => handlePress('1')}>
                 <View style={styles.btn_outer}>
@@ -243,8 +244,6 @@ main_screen__display: {
     backgroundColor: 'white',
     borderRadius: 10,
     display: 'flex',
-
-   
     marginBottom: 10,
     padding: 10,
 },
@@ -266,7 +265,7 @@ main_screen__keypad_row: {
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 10,
+    padding: 5,
 },
 btn_outer: {
     width: 90,
@@ -301,12 +300,9 @@ bg1_button: {
     fontSize: 30,
     fontWeight: 'bold',
 },
-
-
 btn2_outer: {
     width: 90,
     height: 90,
-
     backgroundColor: 'grey',
     borderRadius: 90,
     elevation: 10,
@@ -319,5 +315,5 @@ bg2_button: {
     color: 'white',
     fontSize: 30,
     fontWeight: 'bold',
-}
+ }
 })
