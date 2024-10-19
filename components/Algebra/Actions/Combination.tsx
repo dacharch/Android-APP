@@ -2,7 +2,14 @@ import React, { useState } from 'react'
 import { Text,TouchableOpacity,View } from 'react-native'
 import { TextInput } from 'react-native-gesture-handler'
 
-const Combination = () => {
+
+type BackProps ={
+    onBack : () => void ;  
+}
+
+const Combination = ({onBack}:BackProps) => {
+
+
 
   const [result,setResult] = useState("Result") ;
   const[firstValue,setFirstValue] = useState('0') ;
@@ -44,6 +51,11 @@ const Combination = () => {
          <Text className=' rounded-md mt-[5%] p-2 font-bold text-2xl text-center bg-green-800 text-white'>{result}</Text>
          <TouchableOpacity onPress={calcluate}>
             <Text className='mt-[10%]  rounded-md text-center p-2 font-bold text-2xl bg-red-500 text-white'>Calculate</Text>
+         </TouchableOpacity>
+         <TouchableOpacity onPress={onBack} >
+              <Text className='rounded-md bg-green-500 mt-5 p-2 font-bold text-2xl text-center'>
+                  Back
+              </Text>
          </TouchableOpacity>
      </View>
   )

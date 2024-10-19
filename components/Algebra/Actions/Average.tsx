@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
-import { View,Text } from 'react-native'
+import { View,Text, TouchableOpacity } from 'react-native'
 import { TextInput } from 'react-native-gesture-handler';
 import { StyleSheet } from 'react-native';
 
-const Average = () => {
+type BackProps ={
+     onBack: () => void  ;
+}  ;
+
+const Average = ({onBack}:BackProps) => {
  const [arithmetic , setAirthmetic] = useState("0") ;
  const [values,setValues] = useState("") ;
  const [harmonic, setHarmonic] =useState("0") ;
@@ -64,7 +68,7 @@ const geometricMean = ()=>{
 
  return (
     <View  className='w-full h-[100%] p-5'>
-           <Text className='text-center mt-5 mb-5 font-bold text-4xl'>Average</Text>
+           <Text className='text-center  mb-2 font-bold text-2xl'>Average</Text>
            <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-5 rounded-md'  >
               {"Arithmetic = "+arithmetic}
            </Text>
@@ -95,6 +99,9 @@ const geometricMean = ()=>{
            </Text>
 
            <Text className='font-bold text-2xl'>{arr}</Text>
+           <TouchableOpacity onPress={onBack}>
+              <Text className='text-center bg-green-300 text-2xl font-bold p-2'>Back</Text>
+           </TouchableOpacity>
             
 
            

@@ -5,6 +5,12 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown';
 import { TextInput } from 'react-native-gesture-handler';
 
+
+
+type BackProps = {
+    onBack: () => void;
+};
+ 
 const data = [
     { label: "Discount", value: 1 },
     { label: "Compound Interest", value: 2 },
@@ -66,6 +72,7 @@ const Discount = ()=>{
              <Text className='bg-green-700 mt-5  w-full rounded-md text-white text-center p-5 text-2xl font-bold'>
                 {output}
               </Text>
+
          </View>
      )
 }
@@ -126,12 +133,12 @@ const CompoundInterest = ()=>{
                 onChangeText={addYear}
              />
         
-             <Text className="bg-green-700 text-center font-bold text-white p-3 rounded-md text-2xl mt-2">                 
+             <Text className="bg-green-700 text-center font-bold text-white p-1 rounded-md text-xl ">                 
                  {output}
              </Text>
              
              <TouchableOpacity onPress={calculateInterest}>
-                 <Text className='text-center mt-5 bg-red-300 font-bold text-2xl p-2 rounded-md text-white'>
+                 <Text className='text-center mt-2 bg-red-300 font-bold text-xl p-1 rounded-md text-white'>
                     Calculate
                  </Text>
              </TouchableOpacity>
@@ -297,7 +304,7 @@ function Percentage() {
 
     return (
         <View className='w-full h-[100%]'>
-            <Text className='text-center font-bold text-2xl mt-[10%]'>Percentage Calculator</Text>
+            <Text className='text-center font-bold text-2xl mt-[3%]'>Percentage Calculator</Text>
             <View>
                <Dropdown   
                   style={styles.dropdown}
@@ -318,6 +325,8 @@ function Percentage() {
                      render() 
                  }
             </View>
+
+       
             
         </View>
     )

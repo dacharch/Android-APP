@@ -12,13 +12,13 @@ function Algebra() {
 
     const RenderComponent = () => {
         switch (switchComponent) {
-            case "Percentage": return <Percentage />
+            case "Percentage": return <Percentage  />
 
-            case "Average" : return <Average/>
+            case "Average" : return <Average onBack ={() => setComponent("")}/>
+ 
+            case "Prime Checker" : return <PrimeChecker onBack = {()=> setComponent("")}/>
 
-            case "Prime Checker" : return <PrimeChecker/>
-
-            case "Combination": return <Combination/>
+            case "Combination": return <Combination onBack ={()=> setComponent("")}/>
 
 
             default: return "";
