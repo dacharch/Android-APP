@@ -3,10 +3,10 @@ import { Text,TouchableOpacity,View } from 'react-native'
 import { TextInput } from 'react-native-gesture-handler'
 
 const Combination = () => {
+
   const [result,setResult] = useState("Result") ;
   const[firstValue,setFirstValue] = useState('0') ;
   const[secondValue,setSecondValue] =useState('0') ;
-
 
   const firstNumber =(num:string) =>{
       setFirstValue(num)  ;
@@ -19,10 +19,12 @@ const Combination = () => {
   const calcluate = ()=>{
      let num = parseInt(firstValue) ;
      let num2 = parseInt(secondValue) ;
+     let result = Math.pow(num,num2) ; 
 
-     let result = Math.pow(num,num2) ;
      setResult(result.toString()) ;
-  }
+  
+  
+ }
 
 
   return (
@@ -34,7 +36,6 @@ const Combination = () => {
             placeholder='Value of N'
             keyboardType='numeric'
             onChangeText={firstNumber}
-          
          />
 
          <TextInput
@@ -48,8 +49,6 @@ const Combination = () => {
          <TouchableOpacity onPress={calcluate}>
             <Text className='mt-[10%]  rounded-md text-center p-2 font-bold text-2xl bg-red-500 text-white'>Calculate</Text>
          </TouchableOpacity>
-
-
      </View>
   )
 }

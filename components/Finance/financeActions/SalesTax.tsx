@@ -58,11 +58,13 @@ const SalesTax = () => {
              className=' rounded-md bg-white p-2 font-bold text-2xl mt-5'
              placeholder='Enter the Price'
              onChangeText={priceValue}
+             keyboardType='numeric'
           />
           <TextInput
             className='rounded-md p-2 font-bold text-2xl mt-5 bg-white'
             placeholder='Enter the Tax'
             onChangeText={percentValue}
+            keyboardType='numeric'
           />
 
           <Dropdown
