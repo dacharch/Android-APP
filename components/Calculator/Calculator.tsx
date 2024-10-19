@@ -228,7 +228,7 @@ export default Calculator
 
 const styles = StyleSheet.create({
   main_screen: {
-    marginTop:1,
+    marginTop:2,
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: 'white',
@@ -248,14 +248,14 @@ main_screen__display: {
     padding: 10,
 },
 main_screen__display_text: {
-    fontSize: 50,
+    fontSize: 30,
     textAlign: 'right',
 },
 
 
 main_screen__keypad: {
     width: '100%',
-    height: '70%',
+    height: '80%',
     display: 'flex',
 },
 main_screen__keypad_row: {
@@ -265,7 +265,7 @@ main_screen__keypad_row: {
     width: '100%',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 5,
+    padding: 9,
 },
 btn_outer: {
     width: 90,

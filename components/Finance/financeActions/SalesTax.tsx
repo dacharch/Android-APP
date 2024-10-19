@@ -11,7 +11,6 @@ const data =[
 
 
 const SalesTax = () => {
-
   const [price,setPrice] = useState("") ;
   const [tax,setTax] =     useState("") ;
   const [value,setValue] = useState("Addition");
