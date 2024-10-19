@@ -9,8 +9,12 @@ const data =[
    {label:"Subtraction",value:2}
 ]
 
+type BackProps = {
+   onBack: () => void;
+ };
 
-const SalesTax = () => {
+
+const SalesTax = ({onBack}:BackProps) => {
   const [price,setPrice] = useState("") ;
   const [tax,setTax] =     useState("") ;
   const [value,setValue] = useState("Addition");
@@ -89,6 +93,10 @@ const SalesTax = () => {
 
           <TouchableOpacity onPress={calculate}>
              <Text className='text-center font-bold rounded-md mt-5 text-2xl bg-red-300 p-2 '>Calculate</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={onBack}>
+              <Text className='text-center font-bold rounded-md mt-5 bg-green-500 p-2 text-2xl'>Back</Text>
           </TouchableOpacity>
       </View>
   )

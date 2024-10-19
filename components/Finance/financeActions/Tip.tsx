@@ -3,20 +3,20 @@ import React, { useState } from 'react'
 import { View,Text, TouchableOpacity } from 'react-native'
 import { TextInput } from 'react-native-gesture-handler'
 
+type BackProps = {
+   onBack: () => void;
+ };
 
-const Tip = () => {
+const Tip = ({onBack}:BackProps)  => {
+  
   // Value State
   const [bill, setbillAmount] = useState("") ;
   const [peopleNumber, setPeopleNumber] = useState("") ;
   const [tipPrice, setTipPrice] = useState("") ;
-
-
   // Result State
   const [person,setPersonResult] =useState("Cost/Person") ;
   const [tip,setTipAmount] =useState("Tip Amount") ;
   const [result,setBillResult]=useState("Final Bill") ;
-
-
 
   const billAmountPrice = (price:string)=>{
        setbillAmount(price) ;
@@ -29,6 +29,8 @@ const Tip = () => {
   const tipNumber = (tip:string) =>{
       setTipPrice(tip) ;
   }
+
+ 
 
   const calculate = () =>{
      let billPrice = parseInt(bill) ;
@@ -80,6 +82,9 @@ const Tip = () => {
              onPress={calculate}
           >
              <Text className=' bg-red-300 font-bold text-2xl text-center p-5 rounded-md '>Calculate</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={onBack}>
+               <Text className="bg-green-300 font-bold text-2xl text-center p-5 rounded-md mt-5">Back</Text>
           </TouchableOpacity>
     </View>
   )

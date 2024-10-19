@@ -11,8 +11,8 @@ const Finance = () => {
   const RenderComponent = () => {
        
         switch(switchComponent) {
-            case "Sales Tax" : return <SalesTax/>
-            case "Tip" : return <Tip/>
+            case "Sales Tax" : return <SalesTax onBack={()=>setComponent("")}/>
+            case "Tip" : return <Tip onBack={()=>setComponent("")}/>
              
             default : return "" ;
         }

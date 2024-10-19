@@ -7,7 +7,7 @@ const Combination = () => {
   const [result,setResult] = useState("Result") ;
   const[firstValue,setFirstValue] = useState('0') ;
   const[secondValue,setSecondValue] =useState('0') ;
-
+  
   const firstNumber =(num:string) =>{
       setFirstValue(num)  ;
   }
@@ -21,9 +21,7 @@ const Combination = () => {
      let num2 = parseInt(secondValue) ;
      let result = Math.pow(num,num2) ; 
      setResult(result.toString()) ;
-
  }
-
 
   return (
      <View className='p-5 w-full h-[100%] bg-gray-300'>
