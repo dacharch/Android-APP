@@ -31,8 +31,6 @@ const SalesTax = () => {
   const calculate = ()=>{
     let pri = parseInt(price) ;
     let taxPer = parseInt(tax) ;
-
-
     
     if(value == "Addition"){
       let taxIncreaseAmount = (pri * taxPer)/100 ;  
@@ -40,14 +38,13 @@ const SalesTax = () => {
       setResult(result.toString())
       settaxAmountResult(taxIncreaseAmount.toString());
     }
+
     if(value =="Subtraction"){
       let taxIncreaseAmount = (pri * taxPer)/100 ;  
       let result  = pri - taxIncreaseAmount ;
       setResult(result.toString())
       settaxAmountResult(taxIncreaseAmount.toString());
     }
-
-
   }
   
 
@@ -81,7 +78,6 @@ const SalesTax = () => {
           />
 
           <Text
-
              className='font-bold text-2xl bg-white rounded-md p-2 mb-2'              
           >
             {result}
@@ -95,9 +91,6 @@ const SalesTax = () => {
           <TouchableOpacity onPress={calculate}>
              <Text className='text-center font-bold rounded-md mt-5 text-2xl bg-red-300 p-2 '>Calculate</Text>
           </TouchableOpacity>
-
-          
-
       </View>
   )
 }

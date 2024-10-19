@@ -20,10 +20,8 @@ const Combination = () => {
      let num = parseInt(firstValue) ;
      let num2 = parseInt(secondValue) ;
      let result = Math.pow(num,num2) ; 
-
      setResult(result.toString()) ;
-  
-  
+
  }
 
 
