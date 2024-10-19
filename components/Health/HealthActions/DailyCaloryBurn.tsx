@@ -17,7 +17,11 @@ const data2 = [
 ]
 
 
-const DailyCaloryBurn = () => {
+type BackProps = {
+    onBack: () => void;
+};
+
+const DailyCaloryBurn = ({onBack}:BackProps) => {
  
  const [age,setAge] = useState("") ;
  const [height,setHeight] = useState("") ;
@@ -131,6 +135,10 @@ const DailyCaloryBurn = () => {
           <Text className='rounded-md font-bold text-2xl p-2 mt-5 text-center'>{resultCalorie}</Text>
           <TouchableOpacity onPress={calculate}>
                <Text className='bg-red-300 text-center font-bold  p-5 text-2xl mt-[5%] rounded-md'>Calculate </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={onBack}>
+              <Text className='text-center font-bold text-2xl bg-green-300 mt-2 p-2 rounded-md'>Back</Text>
           </TouchableOpacity>
     </View>
   )

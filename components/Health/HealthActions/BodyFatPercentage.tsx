@@ -9,7 +9,10 @@ const data = [
     {label:"Female", value: 2}
 ]
 
-const BodyFatPercentage = () => {
+type BackProps = {
+   onBack: () => void;
+ };
+const BodyFatPercentage = ({onBack}:BackProps) => {
 
   const [age,setAge] =    useState("") ;
   const [height,setHeight] = useState("") ;
@@ -103,6 +106,9 @@ const BodyFatPercentage = () => {
              <Text className='text-center font-bold text-2xl bg-red-300 p-2 rounded-md mt-[2%]'>Calculate</Text>
          </TouchableOpacity>
           
+          <TouchableOpacity onPress={onBack}>
+              <Text className='text-center font-bold text-2xl bg-green-300 p-2 mt-5 '>Back</Text>
+          </TouchableOpacity>
      </View>
   )
 }

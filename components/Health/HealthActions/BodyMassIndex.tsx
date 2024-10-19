@@ -2,11 +2,17 @@ import React, { useState } from 'react'
 import { View,Text, TouchableOpacity } from 'react-native'
 import { TextInput } from 'react-native-gesture-handler'
 
-const BodyMassIndex = () => {
+
+type BackProps = {
+   onBack: () => void;
+};
+
+const BodyMassIndex = ({onBack}:BackProps) => {
 
   const [height,setHeight]= useState("") ;
   const [weight,setWeight] = useState("") ;
   const  [bmiResult,setBMIResult] = useState("") ;
+
 
 
   const bodyHeight = (hg:string)=>{
@@ -53,7 +59,10 @@ const BodyMassIndex = () => {
          <TouchableOpacity onPress={calculate}>
              <Text className='text-center font-bold text-2xl bg-red-300 p-5 rounded-md '>Calculate</Text>
          </TouchableOpacity>
+         <TouchableOpacity onPress={onBack}>
+              <Text className='text-center font-bold text-2xl bg-green-300 p-5 rounded-md mt-2'>Back</Text>
 
+         </TouchableOpacity>
      </View>
   )
 }

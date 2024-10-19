@@ -28,8 +28,11 @@ const PrimeChecker = ({onBack}: BackProps) => {
          <TouchableOpacity className='p-5  rounded-md bg-red-500'>
             <Text className='text-center font-bold text-2xl text-white'>Calcualate</Text>
          </TouchableOpacity>
-
          
+         <TouchableOpacity onPress={onBack}>
+              <Text className=' bg-green-600 mt-2 text-center text-2xl font-bold p-2 rounded-md'>Back</Text>
+         </TouchableOpacity>
+
 
      </View>
   )

@@ -281,6 +281,7 @@ const PercentValue = () =>{
                  <Text className='text-center mt-2 bg-red-500 p-2 rounded-md font-bold text-2xl text-white'>Calculate</Text>
             </TouchableOpacity>
 
+
          </View>
       )
 }
@@ -310,7 +311,6 @@ function Percentage() {
                   style={styles.dropdown}
                   placeholderStyle={styles.placeholderStyle}
                   selectedTextStyle={styles.selectedTextStyle}
-
                   data={data} 
                   labelField="label"
                   valueField="value" 
@@ -325,9 +325,6 @@ function Percentage() {
                      render() 
                  }
             </View>
-
-       
-            
         </View>
     )
 }

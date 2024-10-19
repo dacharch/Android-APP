@@ -10,11 +10,11 @@ const Health = () => {
   
  const RenderComponent = ()=>{
      switch(switchComponent){
-        case "Body Mass Index" : return <BodyMassIndex/>
+        case "Body Mass Index" : return <BodyMassIndex onBack ={()=>setComponent("")}/>
 
-        case "Daily Caloric Burn": return <DailyCaloryBurn/>
+        case "Daily Caloric Burn": return <DailyCaloryBurn onBack = {()=>setComponent('')}/>
 
-        case "Body Fat Percentage" : return <BodyFatPercentage/>
+        case "Body Fat Percentage" : return <BodyFatPercentage onBack = {()=>setComponent("")}/>
 
         default: return "" ;
      }
