@@ -255,7 +255,7 @@ main_screen__display_text: {
 
 main_screen__keypad: {
     width: '100%',
-    height: '80%',
+    height: '85%',
     display: 'flex',
 },
 main_screen__keypad_row: {
