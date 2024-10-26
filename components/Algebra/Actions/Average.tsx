@@ -69,15 +69,15 @@ const geometricMean = ()=>{
  return (
     <View  className='w-full h-[100%] p-5'>
            <Text className='text-center  mb-2 font-bold text-2xl'>Average</Text>
-           <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-5 rounded-md'  >
+           <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-2 rounded-md'  >
               {"Arithmetic = "+arithmetic}
            </Text>
 
-           <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-5 rounded-md'>
+           <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-2 rounded-md'>
                {"Harmonic = " +harmonic}
            </Text>
 
-           <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-5 rounded-md'>
+           <Text className='text-center font-bold text-2xl mb-5 bg-gray-400 p-2 rounded-md'>
                {"Gemoteric = "+geometric}
            </Text>
              
@@ -98,9 +98,9 @@ const geometricMean = ()=>{
               Calculate
            </Text>
 
-           <Text className='font-bold text-2xl'>{arr}</Text>
+       
            <TouchableOpacity onPress={onBack}>
-              <Text className='text-center bg-green-300 text-2xl font-bold p-2'>Back</Text>
+              <Text className='text-center bg-green-300 text-2xl font-bold p-2 mt-2'>Back</Text>
            </TouchableOpacity>
             
 

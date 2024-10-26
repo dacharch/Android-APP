@@ -11,6 +11,7 @@ const CustomDrawerContent :React.FC<DrawerContentComponentProps> = (props) => {
             <Icon  name="calculator" size={100} />
         </View>
         <DrawerItemList {...props} />
+        
     </DrawerContentScrollView>
   )
 }
