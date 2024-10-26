@@ -46,12 +46,10 @@ const Tip = ({onBack}:BackProps)  => {
    
   }
    
- 
-  
-  
+
   return (
     <View className='w-full h-[100%] p-2'>
-          <Text className='text-center font-bold text-2xl  '> Tip</Text>
+          <Text className='text-center font-bold text-2xl'> Tip</Text>
           <TextInput
               className='bg-white font-bold text-2xl rounded-md mt-2 p-2 mb-5'
               placeholder='Enter the Bill Amount'
@@ -75,16 +73,16 @@ const Tip = ({onBack}:BackProps)  => {
           />
 
           <Text className='border rounded-md font-bold text-2xl p-2 mt-2 mb-5'>{result}</Text>
-          <Text className='border rounded-md font-bold text-2xl p-2 mb-5'>{person}</Text> 
-          <Text className='border rounded-md font-bold text-2xl p-2 mb-5'>{tip}</Text>
+          <Text className='border rounded-md font-bold text-2xl p-2 mb-2'>{person}</Text> 
+          <Text className='border rounded-md font-bold text-2xl p-2 mb-2'>{tip}</Text>
     
           <TouchableOpacity
              onPress={calculate}
           >
-             <Text className=' bg-red-300 font-bold text-2xl text-center p-5 rounded-md '>Calculate</Text>
+             <Text className=' bg-red-300 font-bold text-2xl text-center p-2 rounded-md '>Calculate</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={onBack}>
-               <Text className="bg-green-300 font-bold text-2xl text-center p-5 rounded-md mt-5">Back</Text>
+               <Text className="bg-green-300 font-bold text-2xl text-center p-2 rounded-md mt-2">Back</Text>
           </TouchableOpacity>
     </View>
   )
