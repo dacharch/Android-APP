@@ -25,13 +25,9 @@ const Tip = ({onBack}:BackProps)  => {
   const peopleNumberSet = (people:string)=>{
      setPeopleNumber(people)
   }
-  
   const tipNumber = (tip:string) =>{
       setTipPrice(tip) ;
   }
-
- 
-
   const calculate = () =>{
      let billPrice = parseInt(bill) ;
      let people = parseFloat(peopleNumber) ;

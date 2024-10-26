@@ -7,8 +7,8 @@ import DailyCaloryBurn from './HealthActions/DailyCaloryBurn';
 
 const Health = () => {
  const [switchComponent,setComponent] =useState("") ;
-  
  const RenderComponent = ()=>{
+
      switch(switchComponent){
         case "Body Mass Index" : return <BodyMassIndex onBack ={()=>setComponent("")}/>
 
