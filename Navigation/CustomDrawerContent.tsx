@@ -2,28 +2,29 @@ import { DrawerContent, DrawerContentScrollView, DrawerItem, DrawerItemList } fr
 import { DrawerContentComponentProps } from '@react-navigation/drawer'
 import React from 'react'
 import { StyleSheet, Text,View } from 'react-native'
+import Icon from 'react-native-vector-icons/AntDesign'
 
 const CustomDrawerContent :React.FC<DrawerContentComponentProps> = (props) => {
- 
-
   return (
     <DrawerContentScrollView { ...props} >
-         <View style={styles.container}>
-            
-         </View>
+        <View style={styles.top_container}>
+            <Icon  name="calculator" size={100} />
+        </View>
         <DrawerItemList {...props} />
-     
-       
     </DrawerContentScrollView>
   )
 }
 
 const styles = StyleSheet.create({
-    container:{
-      backgroundColor:'yellow',
-      height:"20%",
-      width:"100%"
+    top_container:{
+       backgroundColor:'transparent',
+       alignItems:"center",
+       display:"flex",
+       height:"50%",
+       width:"100%",
+       
     },
+    
     title:{
        color:'red'
     }
