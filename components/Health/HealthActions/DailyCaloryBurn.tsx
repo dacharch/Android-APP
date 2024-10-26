@@ -132,9 +132,9 @@ const DailyCaloryBurn = ({onBack}:BackProps) => {
              }}
           />
 
-          <Text className='rounded-md font-bold text-2xl p-2 mt-5 text-center'>{resultCalorie}</Text>
+          <Text className='rounded-md font-bold text-2xl p-2  text-center'>{resultCalorie}</Text>
           <TouchableOpacity onPress={calculate}>
-               <Text className='bg-red-300 text-center font-bold  p-5 text-2xl mt-[5%] rounded-md'>Calculate </Text>
+               <Text className='bg-red-300 text-center font-bold  p-5 text-2xl  rounded-md'>Calculate </Text>
           </TouchableOpacity>
 
           <TouchableOpacity onPress={onBack}>
@@ -149,7 +149,7 @@ export default DailyCaloryBurn
 
 const styles = StyleSheet.create({
      dropdown: {
-         margin: 16,
+         margin: 5,
          height: 50,
          borderBottomColor:'gray',
          borderBottomWidth:0.5,
