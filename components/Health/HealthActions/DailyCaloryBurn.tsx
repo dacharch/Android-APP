@@ -151,13 +151,14 @@ const styles = StyleSheet.create({
      dropdown: {
          margin: 10,
          height: 75,
-         fontWeight:'bold',
+        
          borderBottomColor:'gray',
          borderBottomWidth:0.5,
          borderColor: "black"
      },
      placeholderStyle:{
-       fontSize:20,
+       fontSize:25,
+       fontWeight:'bold'
      },
      selectedTextStyle:{
          fontSize:16
