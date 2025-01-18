@@ -108,9 +108,7 @@ const DailyCaloryBurn = ({onBack}:BackProps) => {
              style={styles.dropdown}
              placeholderStyle={styles.placeholderStyle}
              selectedTextStyle={styles.selectedTextStyle}
-
              data={data2}
-
              labelField="label"
              valueField="value"
              placeholder='Select Gender'
@@ -151,16 +149,17 @@ const styles = StyleSheet.create({
      dropdown: {
          margin: 10,
          height: 75,
-        
+       
          borderBottomColor:'gray',
          borderBottomWidth:0.5,
-         borderColor: "black"
+         borderColor: "black",
+         
      },
      placeholderStyle:{
        fontSize:25,
        fontWeight:'bold'
      },
      selectedTextStyle:{
-         fontSize:16
+         fontSize:25
      },   
 })

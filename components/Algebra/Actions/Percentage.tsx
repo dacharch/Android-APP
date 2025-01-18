@@ -5,11 +5,11 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown';
 import { TextInput } from 'react-native-gesture-handler';
 
-
-
 type BackProps = {
     onBack: () => void;
 };
+
+
  
 const data = [
     { label: "Discount", value: 1 },
