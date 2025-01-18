@@ -90,6 +90,7 @@ const geometricMean = ()=>{
             className='h-[20%] border font-bold text-2xl'
             onChangeText={setInputText}
             multiline
+            placeholder='Output'
            />
 
            <Text
@@ -115,7 +116,9 @@ const styles = StyleSheet.create({
     multilineText:{
         minHeight:100,
         textAlignVertical:"top",
+        padding:10,
     }
+
 })
 
 

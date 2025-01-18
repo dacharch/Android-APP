@@ -1,4 +1,4 @@
-import { DrawerContent, DrawerContentScrollView, DrawerItem, DrawerItemList } from '@react-navigation/drawer'
+import {  DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer'
 import { DrawerContentComponentProps } from '@react-navigation/drawer'
 import React from 'react'
 import { StyleSheet, Text,View } from 'react-native'
@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
        display:"flex",
        height:"50%",
        width:"100%",
-       
     },
     title:{
        color:'red'
