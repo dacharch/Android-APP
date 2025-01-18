@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 
 const Calculator = () => {
-  const[value,setValue] = useState('0') ;
+  const[value,setValue] = useState('00') ;
   const [bracketopen,setBracketOpen] =useState(false) ;
 
   const handlePress = (val:any) => {
