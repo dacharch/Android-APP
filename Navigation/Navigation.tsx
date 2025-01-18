@@ -21,6 +21,7 @@ const Navigation = () => {
                   drawerLabelStyle:{
                       color:'#fff',
                       fontSize:23,
+                      fontWeight:'bold',
                       fontFamily:'Georgia',
                   },
                }}
