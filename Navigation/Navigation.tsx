@@ -6,7 +6,6 @@ import Algebra from '../components/Algebra/Algebra';
 import Finance from '../components/Finance/Finance';
 import Health from '../components/Health/Health';
 import CustomDrawerMenu from './CustomDrawerContent';
-import { StyleSheet } from 'react-native';
 
 
 const Drawer = createDrawerNavigator();
