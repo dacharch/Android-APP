@@ -49,7 +49,7 @@ const Discount = ()=>{
          <View className='p-2'>
              <Text className='text-center text-2xl font-bold mb-5'>Item Price </Text>
              <TextInput
-              placeholder='Item Price'
+              placeholder='Price'
               style={styles.input}
               onChangeText={setItemPriceValue}
               keyboardType='numeric'
