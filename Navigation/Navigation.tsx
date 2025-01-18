@@ -6,15 +6,27 @@ import Algebra from '../components/Algebra/Algebra';
 import Finance from '../components/Finance/Finance';
 import Health from '../components/Health/Health';
 import CustomDrawerMenu from './CustomDrawerContent';
+import { StyleSheet } from 'react-native';
+
 
 const Drawer = createDrawerNavigator();
 
 const Navigation = () => {
     return (
         <NavigationContainer>
-            <Drawer.Navigator initialRouteName="Homr"
+            <Drawer.Navigator 
+               screenOptions={{
+                  drawerActiveBackgroundColor:'#003CB3',
+                  drawerInactiveBackgroundColor:'#345766',
+                
+                  drawerLabelStyle:{
+                      color:'#fff',
+                      fontSize:23,
+                      fontFamily:'Georgia',
+                  },
+               }}
+               initialRouteName="Home"
                drawerContent={(props) =><CustomDrawerMenu{...props}/>}
-               
             >
                 <Drawer.Screen name="Calculator" component={HomeScreen} />
                 <Drawer.Screen name="Algebra" component={Algebra} />
@@ -24,5 +36,10 @@ const Navigation = () => {
         </NavigationContainer>
     )
 }
+
+
+
+
+
 export default Navigation
 

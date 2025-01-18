@@ -11,7 +11,11 @@ const CustomDrawerContent :React.FC<DrawerContentComponentProps> = (props) => {
             <Icon  name="calculator" size={100} />
             <Text>All In One Calculator</Text>
         </View>
-        <DrawerItemList {...props} />
+        <DrawerItemList
+          
+  
+           {...props} 
+        />
         
     </DrawerContentScrollView>
   )
@@ -24,10 +28,12 @@ const styles = StyleSheet.create({
        display:"flex",
        height:"50%",
        width:"100%",
+       
     },
     title:{
        color:'red'
-    }
+    },
+    
 })
 export default CustomDrawerContent 
 

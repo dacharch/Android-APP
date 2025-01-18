@@ -4,13 +4,14 @@ import { StyleSheet } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 
 const Calculator = () => {
-  const[value,setValue] = useState('00') ;
+  const [value,setValue] = useState('00') ;
   const [bracketopen,setBracketOpen] =useState(false) ;
 
   const handlePress = (val:any) => {
     if (val == 'AC') {
         setValue('0')
     }
+
     else if (val == '=') {
         try {
             if ((value.match(/\(/g) || []).length == (value.match(/\)/g) || []).length) {
@@ -51,6 +52,7 @@ const Calculator = () => {
             }
         }
     }
+
     else {
         if (value == '0') {
             if (val == '+' || val == '-' || val == '*' || val == '/' || val == '.' || val == '%') {
@@ -59,7 +61,7 @@ const Calculator = () => {
             else {
                 setValue(val)
             }
-        }
+    }
         // console.log(val)
         else if (isNaN(val)) {
             console.log(value.slice(-1))
@@ -74,8 +76,6 @@ const Calculator = () => {
             setValue(value + val)
         }
     }
-
-
 } 
 
   
