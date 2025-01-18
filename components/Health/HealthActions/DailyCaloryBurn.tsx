@@ -149,8 +149,9 @@ export default DailyCaloryBurn
 
 const styles = StyleSheet.create({
      dropdown: {
-         margin: 5,
-         height: 50,
+         margin: 10,
+         height: 75,
+         fontWeight:'bold',
          borderBottomColor:'gray',
          borderBottomWidth:0.5,
          borderColor: "black"
